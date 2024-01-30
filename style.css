@@ -1,0 +1,152 @@
+body {
+    background-image: url('images/background.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+#header {
+    background-color: white;
+    color: #fff;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 13;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#logo {
+    color: #4ea891;
+}
+
+#main-text {
+    color: white;
+}
+
+
+#container {
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-rows: repeat(12, 1fr);
+    grid-template-columns: repeat(12, 1fr);
+}
+#main-text {
+    grid-row-start: 2;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 13;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#searchbox {
+    grid-row-start: 4;
+    grid-row-end: 12;
+    grid-column-start: 1;
+    grid-column-end: 7;
+    display: flex;
+    flex-direction: column;
+
+    
+}
+
+#resultbox {
+    grid-row-start: 4;
+    grid-row-end: 12;
+    grid-column-start: 7;
+    grid-column-end: 13;
+    display: flex;
+    
+
+}
+#footer {
+    grid-row-start: 12;
+    grid-row-end: 13;
+    grid-column-start: 1;
+    grid-column-end: 13;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  }
+
+
+form input[type="text"],
+form input[type="date"] {
+    flex: 2;
+    margin-right: 1rem;
+    margin-bottom: 0.5rem;
+    padding: 0.2rem;
+    font-size: 0.9rem;
+}
+
+form button[type="submit"] {
+    
+    margin-right: 0;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+    background-color: #003049;
+    color: #fff;
+    border: none;
+    border-radius: 0.2rem;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+
+
+
+
+
+
+/* .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.section-title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.form-group input[type="text"],
+.form-group input[type="date"] {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 0.2rem;
+}
+
+.form-group button[type="submit"] {
+    width: 100%;
+    padding: 0.5rem;
+    background-color: #003049;
+    color: #fff;
+    border: none;
+    border-radius: 0.2rem;
+    cursor: pointer;
+}
+
+.section-link {
+    display: block;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    background-color
+} */
