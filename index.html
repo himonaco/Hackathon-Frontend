@@ -1,43 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tickethack</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>tickethack</title>
+  </head>
+  <body>
     <div id="container">
-        <header id="header">
-            <h1 id="logo">Tickethack</h1>
-            <a href="/cart">Cart</a>
-            <a href="/bookings">Bookings</a>
-        </header>
-        
-            <div id="main-text">
-                <h1>Explore the world effortlessly by train!</h1>
-                <h3>Compare, book and enjoy cheap prices for train tickets: your journey starts on Tickethack.</h3>
+      <div class="nav">
+        <div class="logo">
+          <a href="index.html"> Tickethack </a>
+        </div>
+        <div class="menu">
+          <a class="cart" href="cart.html">Cart</a>
+          <a class="booking" href="book.html">Booking</a>
+        </div>
+      </div>
+      <div id="body-container">
+        <div class="titre-container">
+          <h2>Explore the world effortlessly by train!</h2>
+          <h3>
+            Compare, book and enjoy cheap prices for train tickets: your journey
+            starts on Tickethack.
+          </h3>
+        </div>
+        <div class="card-container">
+          <div class="card" id="search-contain">
+            <div class="input-text">
+              <input id="departure" type="text" placeholder="Departure" />
+              <input id="arrival" type="text" placeholder="Arrival" />
             </div>
-            
-                
-                    <form id="searchbox" action="/search" method="get">
-                        <input type="text" id="departure" name="departure" placeholder="Departure">
-                        <input type="text" id="arrival" name="arrival" placeholder="Arrival">
-                        <input type="date" id="date" name="date" value="2022-06-23">
-                        <button type="submit">Search</button>
-                    </form>
-                
-            
-            <div id="resultbox">
-                <section>
-                    <img src="images/train.png" alt="train">
-                    <p>It's time to book your future trip.</p>
-                </section>
+            <div class="input-date">
+              <input id="date" type="date" />
             </div>
-        
-        <footer id="footer">
-            <p>Copyright © TEAM QUEBEC</p>
-        </footer>
+            <div class="btn-search">
+              <p class="btn" id="btnSearch">search</p>
+            </div>
+          </div>
+          <div class="card" id="result-contain">
+            <div class="empty">
+              <img src="images/train.png" alt="train" id="train" />
+              <hr />
+              <p id="trip">It's time to book your future trip.</p>
+            </div>
+            <div class="false">
+              <img src="images/notfound.png" alt="notfound" id="notfound" />
+              <hr />
+              <p id="trip">No trip found.</p>
+            </div>
+            <div id="root-search"></div>
+          </div>
+        </div>
+      </div>
     </div>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
